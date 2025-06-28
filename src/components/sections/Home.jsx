@@ -1,6 +1,7 @@
 import React from 'react';
 import ReviewOnScroll from '../ReviewOnScroll';
 import profile from '../../assets/profile.jpg'
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -39,6 +40,32 @@ const Home = () => {
             </a>
           </div>
         </div>
+
+  
+
+
+<div className="flex justify-center md:justify-start gap-4 mt-5">
+  <a
+    href="https://www.linkedin.com/in/samiul-kabir-11177333a/" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-outline btn-sm flex items-center gap-2 "
+  >
+    <FaLinkedin className="text-blue-600 text-lg" />
+    LinkedIn
+  </a>
+
+  <a
+    href="https://github.com/nafeesalways" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-outline btn-sm flex items-center gap-2"
+  >
+    <FaGithub className="text-gray-50 text-lg " />
+    GitHub
+  </a>
+</div>
+
       </ReviewOnScroll>
 
       {/* Right: Image */}

@@ -23,7 +23,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a href='#home' className='text-gray-300 hover:text-white transition-colors'>Home</a></li>
+      <li><a href='#home' className='text-gray-300  hover:text-white transition-colors'>Home</a></li>
       <li><a href='#about' className='text-gray-300 hover:text-white transition-colors'>About Me</a></li>
       <li><a href='#projects' className='text-gray-300 hover:text-white transition-colors'>Projects</a></li>
       <li><a href='#contact' className='text-gray-300 hover:text-white transition-colors'>Contact</a></li>

@@ -7,6 +7,7 @@ Welcome to my personal portfolio website built with **React**, styled using **Ta
 ## 🚀 Tech Stack
 
 - ⚛️ **React.js**
+- 🔯 **React icons**
 - 🎨 **Tailwind CSS**
 - 💠 **DaisyUI** (Tailwind UI Components)
 - 🌐 Responsive Web Design
