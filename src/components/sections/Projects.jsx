@@ -16,8 +16,19 @@ const projectData = [
     challenges: 'Handling real-time data updates and ensuring full mobile responsiveness.',
     improvements: 'Add notifications, advanced search/filter, and user analytics.',
   },
-  {
+   {
     id: '2',
+    name: 'Food Tracking System',
+    image: 'https://camo.githubusercontent.com/b31d1b67cb7d30d474915e065e608d1754d0147094e24a52c08850d7e2a5f36a/68747470733a2f2f696d672e6672656570696b2e636f6d2f667265652d70686f746f2f776f6d616e2d627579696e672d6672756974732d6f6e6c696e652d7573696e672d6865722d736d61727470686f6e655f32332d323134393234303337342e6a70673f67613d4741312e312e313734343531313632332e313734393338353938302673656d743d6169735f6974656d735f626f6f7374656426773d373430',
+    techStack: ['React', 'Node.js', 'MongoDB', 'React Hook Form'],
+    description: 'Parcel delivery management with dynamic pricing, form validation, and parcel tracking.',
+    liveLink: 'https://fresh-keep.netlify.app/',
+    githubLink: 'https://github.com/nafeesalways/food-tracker-client',
+   
+    improvements: 'Real-time delivery status, delivery notifications, and admin analytics.',
+  },
+  {
+    id: '3',
     name: 'Subscription Box Platform',
     image: 'https://ideausher.com/wp-content/uploads/2023/05/image-36-1024x576.png',
     techStack: ['React', 'Express', 'MongoDB', 'Firebase Auth'],
@@ -27,17 +38,7 @@ const projectData = [
     challenges: 'Managing protected routes and different user roles.',
     improvements: 'Add resume uploads, interview scheduling, and job analytics.',
   },
-  {
-    id: '3',
-    name: 'Food Tracking System',
-    image: 'https://camo.githubusercontent.com/b31d1b67cb7d30d474915e065e608d1754d0147094e24a52c08850d7e2a5f36a/68747470733a2f2f696d672e6672656570696b2e636f6d2f667265652d70686f746f2f776f6d616e2d627579696e672d6672756974732d6f6e6c696e652d7573696e672d6865722d736d61727470686f6e655f32332d323134393234303337342e6a70673f67613d4741312e312e313734343531313632332e313734393338353938302673656d743d6169735f6974656d735f626f6f7374656426773d373430',
-    techStack: ['React', 'Node.js', 'MongoDB', 'React Hook Form'],
-    description: 'Parcel delivery management with dynamic pricing, form validation, and parcel tracking.',
-    liveLink: 'https://fresh-keep.netlify.app/',
-    githubLink: 'https://github.com/nafeesalways/food-tracker-client',
-    challenges: 'Dynamic cost calculation and form error handling.',
-    improvements: 'Real-time delivery status, delivery notifications, and admin analytics.',
-  },
+ 
 ];
 
 const Projects = () => {
@@ -48,14 +49,13 @@ const Projects = () => {
         <img src="${project.image}" alt="${project.name}" style="width:100%; height:auto; border-radius:8px; margin-bottom:10px" />
         <p><strong>Tech Stack:</strong> ${project.techStack.join(', ')}</p>
         <p><strong>Description:</strong> ${project.description}</p>
-        <p><strong>Challenges:</strong> ${project.challenges}</p>
-        <p><strong>Future Plans:</strong> ${project.improvements}</p>
         <p>
           <a href="${project.liveLink}" target="_blank" style="color:#3b82f6">🔗 Live Project</a><br/>
           <a href="${project.githubLink}" target="_blank" style="color:#10b981">📂 GitHub Repository</a>
         </p>
       `,
       showCloseButton: true,
+      color: 'blue',
       focusConfirm: false,
       confirmButtonText: 'Close',
       width: '600px',

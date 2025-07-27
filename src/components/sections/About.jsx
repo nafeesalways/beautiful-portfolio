@@ -29,7 +29,7 @@ const About = () => {
                  </ul>
                 </div>
                 <div className='p-6 rounded-xl border-white/10 hover:-translate-y-1 transition-all'>
-                 <h3 className='text-xl font-bold mb-4'>📑 Course Experience</h3>
+                 <h3 className='text-xl font-bold mb-4'>📑 Certification</h3>
                  <div>
                     <h4>Recently learning With Creative IT Academy(2024)</h4>
                     <p>Contributing and Collaborating many projects,ideas and innovations.</p>
