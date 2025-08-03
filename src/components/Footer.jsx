@@ -11,7 +11,7 @@ const Footer = () => {
             src="https://cdn-icons-png.flaticon.com/128/4997/4997543.png"
             alt="Logo"
           />
-          <a className="btn btn-ghost text-xl font-bold font-mono text-white">
+          <a className="btn btn-ghost text-sm lg:text-xl font-bold font-mono text-white">
             Samiul<span className="text-blue-500">.tech</span>
           </a>
         </div>
