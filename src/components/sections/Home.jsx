@@ -16,7 +16,7 @@ const Home = () => {
             Hello, I'm Samiul Kabir
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto md:mx-0">
-            I'm a React Js Developer who loves crafting plain, scalable web applications. My goal is to build solutions that offer both exceptional performance and a delightful user experience.
+            I'm a Front-End Developer who loves crafting plain, scalable web applications. My goal is to build solutions that offer both exceptional performance and a delightful user experience.
           </p>
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <a
