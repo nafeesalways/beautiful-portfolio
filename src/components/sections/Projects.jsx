@@ -30,7 +30,7 @@ const projectData = [
     techStack: ['React', 'Express', 'MongoDB', 'Firebase Auth','React Hook Form'],
     description: 'A full-stack web application designed to streamline the operations of a modern sports club. The system supports court management, user membership, booking approvals, announcements, and online payments.',
     liveLink: 'https://champion-club1.netlify.app',
-    githubLink: 'https://github.com/nafeesalways/sports-club-server',
+    githubLink: 'https://github.com/nafeesalways/sports-club-client',
   },
  
 ];
