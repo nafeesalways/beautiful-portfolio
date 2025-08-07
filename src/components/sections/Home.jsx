@@ -1,82 +1,92 @@
 import React from 'react';
 import ReviewOnScroll from '../ReviewOnScroll';
-import profile from '../../assets/profile.jpg'
+import profile from '../../assets/profile.jpg';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-20 gap-12"
+      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-12 py-20 gap-12 bg-black text-white"
     >
-      {/* Left: Text */}
+      {/* Left: Text Content */}
       <ReviewOnScroll>
-        <div className="md:w-1/2 text-center md:text-left z-10">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="md:w-1/2 text-center md:text-left z-10"
+        >
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             Hello, I'm Samiul Kabir
           </h1>
+
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto md:mx-0">
-            I'm a Front-End Developer who loves crafting plain, scalable web applications. My goal is to build solutions that offer both exceptional performance and a delightful user experience.
+            I'm a Front-End Developer who loves crafting clean, scalable web applications. My goal is to build solutions that offer both exceptional performance and a delightful user experience.
           </p>
+
+          {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <a
               href="#projects"
               className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
-              View Projects
+              🚀 View Projects
             </a>
             <a
               href="#contact"
               className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:bg-blue-500/10 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
-              Contact Me
+              ✉️ Contact Me
             </a>
             <a
               href="/resume.pdf"
               download
               className="bg-gray-800 text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:bg-gray-700 hover:shadow-lg"
             >
-             ⬇️ Download Resume
+              ⬇️ Download Resume
             </a>
           </div>
-        </div>
 
-  
-
-
-<div className="flex justify-center md:justify-start gap-4 mt-5">
-  <a
-    href="https://www.linkedin.com/in/samiul-kabir-11177333a/" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn btn-outline btn-sm flex items-center gap-2 "
-  >
-    <FaLinkedin className="text-blue-600 text-lg" />
-    LinkedIn
-  </a>
-
-  <a
-    href="https://github.com/nafeesalways" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn btn-outline btn-sm flex items-center gap-2"
-  >
-    <FaGithub className="text-gray-50 text-lg " />
-    GitHub
-  </a>
-</div>
-
+          {/* Social Links */}
+          <div className="flex justify-center md:justify-start gap-4 mt-6">
+            <a
+              href="https://www.linkedin.com/in/samiul-kabir-11177333a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-white/20 py-2 px-4 rounded hover:bg-blue-600 transition"
+            >
+              <FaLinkedin className="text-blue-400 text-lg" />
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/nafeesalways"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-white/20 py-2 px-4 rounded hover:bg-gray-700 transition"
+            >
+              <FaGithub className="text-white text-lg" />
+              GitHub
+            </a>
+          </div>
+        </motion.div>
       </ReviewOnScroll>
 
-      {/* Right: Image */}
+      {/* Right: Profile Image */}
       <ReviewOnScroll>
-        <div className="flex justify-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center"
+        >
           <img
             src={profile}
             alt="Samiul Kabir"
-            className="w-72 h-72 object-cover rounded-full border-4 border-blue-400 shadow-lg"
+            className="w-72 h-72 object-cover rounded-full border-4 border-blue-400 shadow-xl transition-transform duration-300 hover:scale-105"
           />
-        </div>
+        </motion.div>
       </ReviewOnScroll>
     </section>
   );
