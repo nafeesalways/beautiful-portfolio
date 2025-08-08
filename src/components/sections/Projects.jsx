@@ -5,6 +5,15 @@ import ReviewOnScroll from '../ReviewOnScroll';
 const projectData = [
   {
     id: '1',
+    name: 'English Janala',
+    image: 'https://images.unsplash.com/photo-1543165796-5426273eaab3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGVuZ2xpc2glMjBsZXNzb258ZW58MHx8MHx8fDA%3D',
+    techStack: ['HTML','CSS','JS'],
+    description: 'English Janala is a platform where users can practice and learn English using voice-based lessons. It offers interactive speaking, listening, and pronunciation activities, making it easy for learners.',
+    liveLink: 'https://dokhina-janala.netlify.app',
+    githubLink: 'https://github.com/nafeesalways/english-janala-project',
+  },
+  {
+    id: '2',
     name: 'GardenHub',
     image: 'https://camo.githubusercontent.com/c8bd368c7a80235bf3d5c2030922a16615b71fdb90742ba2f81b10f48e1e3b60/68747470733a2f2f696d672e6672656570696b2e636f6d2f667265652d70686f746f2f6d616c652d68616e64732d63757474696e672d6275736865732d776974682d6269672d73636973736f72735f3635313339362d313534392e6a70673f67613d4741312e312e313734343531313632332e313734393338353938302673656d743d6169735f6974656d735f626f6f7374656426773d373430',
     techStack: ['React', 'Tailwind CSS', 'Firebase', 'MongoDB'],
@@ -14,7 +23,7 @@ const projectData = [
     serverGithubLink: 'https://github.com/nafeesalways/gardening-server',
   },
   {
-    id: '2',
+    id: '3',
     name: 'Food Tracking System',
     image: 'https://camo.githubusercontent.com/b31d1b67cb7d30d474915e065e608d1754d0147094e24a52c08850d7e2a5f36a/68747470733a2f2f696d672e6672656570696b2e636f6d2f667265652d70686f746f2f776f6d616e2d627579696e672d6672756974732d6f6e6c696e652d7573696e672d6865722d736d61727470686f6e655f32332d323134393234303337342e6a70673f67613d4741312e312e313734343531313632332e313734393338353938302673656d743d6169735f6974656d735f626f6f7374656426773d373430',
     techStack: ['React', 'Node.js', 'MongoDB','Tailwind CSS', 'Firebase'],
@@ -23,7 +32,7 @@ const projectData = [
     githubLink: 'https://github.com/nafeesalways/food-tracker-client',
   },
   {
-    id: '3',
+    id: '4',
     name: 'Sports Management System',
     image: 'https://images.unsplash.com/photo-1551543801-fb7bdeb9fc4a?w=500&auto=format&fit=crop&q=60...',
     techStack: ['React', 'Express', 'MongoDB', 'Firebase Auth', 'React Hook Form'],
@@ -106,7 +115,7 @@ const Projects = () => {
           <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             🚀 Featured Projects
           </h2>
-          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-1 lg:grid-cols-2">
             {projectData.map((project) => (
               <div
                 key={project.id}

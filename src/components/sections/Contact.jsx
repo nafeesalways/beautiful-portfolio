@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReviewOnScroll from "../ReviewOnScroll";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
-import { FaEnvelope } from "react-icons/fa";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -46,29 +46,7 @@ const Contact = () => {
             Whether you're interested in collaboration, have a question, or just want to say hi — I'm always open to connecting!
           </p>
 
-          {/* Contact Info */}
-          <div className="text-center text-sm sm:text-base mb-8 space-y-2">
-            <p>
-              📧 Email:
-              <a
-                href="mailto:your.email@example.com"
-                className="text-blue-400 underline"
-              >
-                samiulnafeez@gmail.com
-              </a>
-            </p>
-            <p>
-              📞 Phone:{" "}
-              <a
-                href="tel:+1234567890"
-                className="text-blue-400 underline"
-              >
-               +8801533865826
-              </a>
-            </p>
-          </div>
-
-          {/* Email Icon Only (Optional) */}
+     
       
 
           {/* Contact Form */}
