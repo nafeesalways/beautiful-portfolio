@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Skills = () => {
-    const frontEndSkills = ['React', 'JavaScript', 'TailwindCSS', 'DaisyUi', 'Axios'];
-    const backEndSkills = ['Node.js', 'Express.js', 'MongoDb', 'Firebase', 'JWT'];
+    const frontEndSkills = ['React', 'JavaScript', 'TailwindCSS', 'DaisyUi', 'Axios','REST APIs'];
+    const backEndSkills = ['Node.js', 'Express.js', 'MongoDb', 'Firebase', 'JWT','NextJS'];
 
     return (
         <div>
