@@ -11,6 +11,10 @@ const projectData = [
     techStack: ["HTML", "CSS", "JS"],
     description:
       "English Janala is a platform where users can practice and learn English using voice-based lessons. It offers interactive speaking, listening, and pronunciation activities, making it easy for learners.",
+    challenges:
+      "Integrating voice recognition APIs smoothly for accurate pronunciation checking and ensuring compatibility across different browsers.",
+    futurePlans:
+      "Introduce AI-driven feedback for speaking exercises and add gamified challenges to boost engagement.",
     liveLink: "https://dokhina-janala.netlify.app",
     githubLink: "https://github.com/nafeesalways/english-janala-project",
   },
@@ -22,6 +26,10 @@ const projectData = [
     techStack: ["React", "Tailwind CSS", "Firebase", "MongoDB"],
     description:
       "A social gardening app where users can share tips, explore gardeners, and manage garden content.",
+    challenges:
+      "Implementing secure image uploads with Firebase Storage and managing real-time database updates efficiently.",
+    futurePlans:
+      "Add AI-powered plant disease detection and community event scheduling features.",
     liveLink: "https://garden-life1.netlify.app",
     githubLink: "https://github.com/nafeesalways/gardening-client",
     serverGithubLink: "https://github.com/nafeesalways/gardening-server",
@@ -34,6 +42,10 @@ const projectData = [
     techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Firebase"],
     description:
       "A smart inventory system to track food items, manage storage, and receive expiry alerts.",
+    challenges:
+      "Building a reliable notification system for expiry alerts and optimizing database queries for large inventories.",
+    futurePlans:
+      "Integrate barcode scanning for faster item entry and expand to a mobile app version.",
     liveLink: "https://freshkeep-test1.netlify.app",
     githubLink: "https://github.com/nafeesalways/food-tracker-client",
   },
@@ -51,6 +63,10 @@ const projectData = [
     ],
     description:
       "A club operations app featuring court booking, membership, approvals, announcements, and payments.",
+    challenges:
+      "Managing role-based access control for admins and members while keeping the UI intuitive.",
+    futurePlans:
+      "Add real-time match scheduling, performance analytics, and a mobile-friendly booking system.",
     liveLink: "https://champion-club1.netlify.app",
     githubLink: "https://github.com/nafeesalways/sports-club-client",
   },
@@ -98,13 +114,13 @@ const Projects = () => {
 
         <p><strong>📝 Description:</strong> ${project.description}</p>
 
+        <p><strong>🚧 Challenges Faced:</strong> ${project.challenges}</p>
+
+        <p><strong>🌱 Future Plans:</strong> ${project.futurePlans}</p>
+
         <p>
-          <a href="${
-            project.liveLink
-          }" target="_blank" style="color:#2563eb; font-weight:500;">🚀 Live Site</a><br/>
-          <a href="${
-            project.githubLink
-          }" target="_blank" style="color:#059669; font-weight:500;">💻 Repo</a>
+          <a href="${project.liveLink}" target="_blank" style="color:#2563eb; font-weight:500;">🚀 Live Site</a><br/>
+          <a href="${project.githubLink}" target="_blank" style="color:#059669; font-weight:500;">💻 Repo</a>
         </p>
       </div>
     `,
