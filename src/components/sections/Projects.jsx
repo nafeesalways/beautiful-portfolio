@@ -158,7 +158,7 @@ const Projects = () => {
                   onClick={() => handleViewDetails(project)}
                   className="block mx-auto mt-4 px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg hover:scale-105 transition-all"
                 >
-                  🔍 Explore Project
+                  🔍 View More
                 </button>
               </div>
             ))}
