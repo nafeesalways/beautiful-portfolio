@@ -3,7 +3,6 @@ import ReviewOnScroll from "../ReviewOnScroll";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -46,8 +45,16 @@ const Contact = () => {
             Whether you're interested in collaboration, have a question, or just want to say hi — I'm always open to connecting!
           </p>
 
-     
-      
+          {/* Contact Info */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8 text-white/80 text-center sm:text-left">
+            <p>
+              📞 <a href="tel:+8801533865826" className="hover:text-blue-400 transition">+880 01533 865 826</a>
+            </p>
+            <p className="hidden sm:block">|</p>
+            <p>
+              📧 <a href="mailto:samiulnafeez@gmail.com" className="hover:text-blue-400 transition">samiulnafeez@gmail.com</a>
+            </p>
+          </div>
 
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
