@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <footer className="bg-base-200 text-base-content py-10">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
-        
         {/* Left: Logo and Name */}
         <div className="flex items-center gap-3">
           <img

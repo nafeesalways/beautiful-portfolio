@@ -8,6 +8,7 @@ const Skills = () => {
     "DaisyUi",
     "Axios",
     "REST APIs",
+    "NextJS",
   ];
   const backEndSkills = [
     "Node.js",
@@ -15,7 +16,6 @@ const Skills = () => {
     "MongoDb",
     "Firebase",
     "JWT",
-    "NextJS",
   ];
 
   return (

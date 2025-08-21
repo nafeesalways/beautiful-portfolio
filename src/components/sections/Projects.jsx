@@ -119,8 +119,12 @@ const Projects = () => {
         <p><strong>🌱 Future Plans:</strong> ${project.futurePlans}</p>
 
         <p>
-          <a href="${project.liveLink}" target="_blank" style="color:#2563eb; font-weight:500;">🚀 Live Site</a><br/>
-          <a href="${project.githubLink}" target="_blank" style="color:#059669; font-weight:500;">💻 Repo</a>
+          <a href="${
+            project.liveLink
+          }" target="_blank" style="color:#2563eb; font-weight:500;">🚀 Live Site</a><br/>
+          <a href="${
+            project.githubLink
+          }" target="_blank" style="color:#059669; font-weight:500;">💻 Repo</a>
         </p>
       </div>
     `,

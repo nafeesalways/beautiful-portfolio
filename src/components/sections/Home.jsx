@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import ReviewOnScroll from '../ReviewOnScroll';
-import profile from '../../assets/profile.jpg';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { motion, useAnimation } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import ReviewOnScroll from "../ReviewOnScroll";
+import profile from "../../assets/profile.jpg";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { motion, useAnimation } from "framer-motion";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  console.log(isLoaded)
+  console.log(isLoaded);
   const controls = useAnimation();
 
   useEffect(() => {
@@ -21,16 +21,16 @@ const Home = () => {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
-    hidden: { 
-      y: 50, 
+    hidden: {
+      y: 50,
       opacity: 0,
-      rotateX: -15
+      rotateX: -15,
     },
     visible: {
       y: 0,
@@ -38,31 +38,31 @@ const Home = () => {
       rotateX: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const titleVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
-      y: 50
+      y: 50,
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 1,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const imageVariants = {
-    hidden: { 
+    hidden: {
       scale: 0,
       rotate: -180,
-      opacity: 0
+      opacity: 0,
     },
     visible: {
       scale: 1,
@@ -72,16 +72,16 @@ const Home = () => {
         type: "spring",
         stiffness: 200,
         damping: 15,
-        duration: 1.2
-      }
-    }
+        duration: 1.2,
+      },
+    },
   };
 
   const buttonVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       y: 20,
-      scale: 0.8
+      scale: 0.8,
     },
     visible: {
       opacity: 1,
@@ -89,34 +89,34 @@ const Home = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
+        ease: "easeOut",
+      },
     },
     hover: {
       scale: 1.05,
       y: -3,
       transition: {
-        duration: 0.2
-      }
+        duration: 0.2,
+      },
     },
     tap: {
-      scale: 0.95
-    }
+      scale: 0.95,
+    },
   };
 
   const socialVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
-      x: -30
+      x: -30,
     },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const floatingAnimation = {
@@ -124,21 +124,21 @@ const Home = () => {
     transition: {
       duration: 3,
       repeat: Infinity,
-      ease: "easeInOut"
-    }
+      ease: "easeInOut",
+    },
   };
 
   const glowAnimation = {
     boxShadow: [
       "0 0 20px rgba(59, 130, 246, 0.3)",
       "0 0 40px rgba(59, 130, 246, 0.6)",
-      "0 0 20px rgba(59, 130, 246, 0.3)"
+      "0 0 20px rgba(59, 130, 246, 0.3)",
     ],
     transition: {
       duration: 2,
       repeat: Infinity,
-      ease: "easeInOut"
-    }
+      ease: "easeInOut",
+    },
   };
 
   return (
@@ -193,10 +193,10 @@ const Home = () => {
             transition={{
               duration: 3,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: "easeInOut",
             }}
             style={{
-              backgroundSize: "200% 200%"
+              backgroundSize: "200% 200%",
             }}
           >
             Hello, I'm Samiul Kabir
@@ -207,7 +207,9 @@ const Home = () => {
             variants={itemVariants}
             className="text-gray-400 text-lg mb-8 max-w-xl mx-auto md:mx-0"
           >
-            I'm a Front-End Developer who loves crafting clean, scalable web applications. My goal is to build solutions that offer both exceptional performance and a delightful user experience.
+            I'm a Front-End Developer who loves crafting clean, scalable web
+            applications. My goal is to build solutions that offer both
+            exceptional performance and a delightful user experience.
           </motion.p>
 
           {/* CTA Buttons with stagger */}
@@ -236,9 +238,7 @@ const Home = () => {
               whileTap="tap"
               className="border-2 border-blue-500/50 text-blue-500 py-3 px-6 rounded-lg font-medium relative overflow-hidden group hover:text-white transition-colors duration-300"
             >
-              <motion.span
-                className="absolute inset-0 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"
-              />
+              <motion.span className="absolute inset-0 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
               <span className="relative z-10">✉️ Contact Me</span>
             </motion.a>
 
@@ -250,9 +250,7 @@ const Home = () => {
               whileTap="tap"
               className="bg-gray-800 text-white py-3 px-6 rounded-lg font-medium relative overflow-hidden group hover:bg-gray-700"
             >
-              <motion.span
-                className="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-600 scale-x-0 group-hover:scale-x-100 origin-right transition-transform duration-300"
-              />
+              <motion.span className="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-600 scale-x-0 group-hover:scale-x-100 origin-right transition-transform duration-300" />
               <span className="relative z-10">⬇️ Download Resume</span>
             </motion.a>
           </motion.div>
@@ -267,10 +265,10 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               variants={socialVariants}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 backgroundColor: "rgba(59, 130, 246, 0.1)",
-                borderColor: "rgba(59, 130, 246, 0.8)"
+                borderColor: "rgba(59, 130, 246, 0.8)",
               }}
               className="inline-flex items-center gap-2 border border-white/20 py-2 px-4 rounded-lg transition-all duration-300"
             >
@@ -288,10 +286,10 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               variants={socialVariants}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 backgroundColor: "rgba(75, 85, 99, 0.2)",
-                borderColor: "rgba(255, 255, 255, 0.5)"
+                borderColor: "rgba(255, 255, 255, 0.5)",
               }}
               className="inline-flex items-center gap-2 border border-white/20 py-2 px-4 rounded-lg transition-all duration-300"
             >
@@ -321,7 +319,8 @@ const Home = () => {
             animate={{ rotate: 360 }}
             transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
             style={{
-              background: "conic-gradient(from 0deg, #3b82f6, #8b5cf6, #06b6d4, #3b82f6)",
+              background:
+                "conic-gradient(from 0deg, #3b82f6, #8b5cf6, #06b6d4, #3b82f6)",
               padding: "4px",
             }}
           >
@@ -336,10 +335,10 @@ const Home = () => {
             animate={floatingAnimation}
             whileHover={{
               scale: 1.05,
-              transition: { duration: 0.3 }
+              transition: { duration: 0.3 },
             }}
             style={{
-              filter: "drop-shadow(0 0 20px rgba(59, 130, 246, 0.3))"
+              filter: "drop-shadow(0 0 20px rgba(59, 130, 246, 0.3))",
             }}
           />
 
@@ -348,7 +347,8 @@ const Home = () => {
             className="absolute inset-0 rounded-full pointer-events-none"
             animate={glowAnimation}
             style={{
-              background: "radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%)",
+              background:
+                "radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%)",
             }}
           />
         </motion.div>

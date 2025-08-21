@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
-const ReviewOnScroll = ({ children, animationClass = 'fade-in-up' }) => {
+const ReviewOnScroll = ({ children, animationClass = "fade-in-up" }) => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -13,7 +13,7 @@ const ReviewOnScroll = ({ children, animationClass = 'fade-in-up' }) => {
         }
       },
       {
-        threshold: 0.2,
+        threshold: 0.2,  
       }
     );
 
@@ -28,7 +28,7 @@ const ReviewOnScroll = ({ children, animationClass = 'fade-in-up' }) => {
     <div
       ref={ref}
       className={`opacity-0 transform transition duration-700 ease-out ${
-        isVisible ? `${animationClass} opacity-100` : ''
+        isVisible ? `${animationClass} opacity-100` : ""
       }`}
     >
       {children}

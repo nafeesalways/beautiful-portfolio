@@ -113,8 +113,11 @@ const Navbar = () => {
 
         {/* Resume Button */}
         <div className="navbar-end">
-          <a   href="/resume.pdf"
-              download className="btn border border-blue-500/50 text-blue-400 lg:py-3 lg:px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] hover:bg-blue-500/10">
+          <a
+            href="/resume.pdf"
+            download
+            className="btn border border-blue-500/50 text-blue-400 lg:py-3 lg:px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] hover:bg-blue-500/10"
+          >
             Resume
           </a>
         </div>
