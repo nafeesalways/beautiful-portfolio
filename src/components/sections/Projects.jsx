@@ -59,7 +59,7 @@ const projectData = [
       "Express",
       "MongoDB",
       "Firebase Auth",
-      "React Hook Form",
+      "Stripe",
     ],
     description:
       "A club operations app featuring court booking, membership, approvals, announcements, and payments.",
