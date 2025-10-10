@@ -60,7 +60,7 @@ const About = () => {
                 <strong>
                   UnderGraduate Textile Engineer at Textile Engineering
                   College,Chittagong,Bangladesh Affiliated to Bangladesh
-                  University Of Textiles(BUTEX) (2022-2026)
+                  University Of Textiles(BUTEX) (2022 - Present)
                 </strong>
               </li>
               <li>
