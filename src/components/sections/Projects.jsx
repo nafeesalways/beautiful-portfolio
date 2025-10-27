@@ -5,18 +5,18 @@ import ReviewOnScroll from "../ReviewOnScroll";
 const projectData = [
   {
     id: "1",
-    name: "English Janala",
+    name: "TicketHub",
     image:
-      "https://images.unsplash.com/photo-1543165796-5426273eaab3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGVuZ2xpc2glMjBsZXNzb258ZW58MHx8MHx8fDA%3D",
-    techStack: ["HTML", "CSS", "JS"],
-    description:
-      "English Janala is a platform where users can practice and learn English using voice-based lessons. It offers interactive speaking, listening, and pronunciation activities, making it easy for learners.",
-    challenges:
-      "Integrating voice recognition APIs smoothly for accurate pronunciation checking and ensuring compatibility across different browsers.",
-    futurePlans:
-      "Introduce AI-driven feedback for speaking exercises and add gamified challenges to boost engagement.",
-    liveLink: "https://dokhina-janala.netlify.app",
-    githubLink: "https://github.com/nafeesalways/english-janala-project",
+      "https://images.unsplash.com/photo-1755866928148-592aeb339d31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRpY2tldCUyMGJvb2tpbmclMjBwbGF0Zm9ybXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+     techStack: ["Next.js", "NextAuth", "MongoDB", "SSLCOMMERZ"],
+  description:
+    "TicketHub is a modern online ticket booking platform that enables users to browse, book, and manage tickets for movies, concerts, workshops, and community events. The system provides real-time seat selection, secure payments, and automatic e-ticket generation with QR codes. Organizers can manage events and track revenue, while admins oversee platform activities and user roles — ensuring a smooth and reliable experience for all stakeholders.",
+  challenges:
+    "Implementing real-time seat selection without booking conflicts, and maintaining smooth performance during high traffic were major challenges. Role-based access control and ensuring seamless synchronization between user, organizer, and admin dashboards also required careful architectural planning.",
+  futurePlans:
+    "Introduce AI-powered event recommendations based on user preferences, integrate push notifications for real-time updates, launch a mobile PWA version for better accessibility, and add multi-language support with international payment gateway expansion.",
+    liveLink: "https://ticket-hub-online-ticket-booking-sy.vercel.app",
+    githubLink: "https://github.com/anik804/TicketHub-Online-Ticket-Booking-System",
   },
   {
     id: "2",
