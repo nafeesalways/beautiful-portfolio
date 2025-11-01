@@ -88,18 +88,6 @@ const Home = () => {
             animate={isLoaded ? "visible" : "hidden"}
             className="order-2 lg:order-1 text-center lg:text-left z-10"
           >
-            {/* Badge */}
-            <motion.div
-              variants={badgeVariants}
-              className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mb-6"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <span className="text-sm text-gray-300">Available for work</span>
-            </motion.div>
-
             {/* Title */}
             <motion.h1
               variants={itemVariants}
@@ -124,8 +112,8 @@ const Home = () => {
               variants={itemVariants}
               className="text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Passionate about crafting beautiful, performant web experiences.
-              I specialize in building scalable applications with modern
+              Passionate about crafting beautiful, performant web experiences. I
+              specialize in building scalable applications with modern
               technologies like MERN Stack, Next.js, and Tailwind CSS.
             </motion.p>
 
@@ -217,9 +205,17 @@ const Home = () => {
                   transition={{ delay: 1, type: "spring" }}
                   className="absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full font-medium shadow-xl border-4 border-black"
                 >
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl">💻</span>
-                    <span className="text-sm font-bold">Multiple Projects</span>
+                  <div className="flex items-center gap-3">
+                    <motion.div
+                      variants={badgeVariants}
+                      className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-3 py-2"
+                    >
+                      <span className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                      </span>
+                    </motion.div>
+                    <span className="text-sm font-bold">Open To Work</span>
                   </div>
                 </motion.div>
               </div>
