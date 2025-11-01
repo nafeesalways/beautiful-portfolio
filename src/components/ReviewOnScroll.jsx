@@ -1,6 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const ReviewOnScroll = ({ children, animationClass = "fade-in-up" }) => {
+const ReviewOnScroll = ({ 
+  children, 
+  animationClass = "fade-in-up",
+  threshold = 0.1,
+  delay = 0 
+}) => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -8,12 +13,16 @@ const ReviewOnScroll = ({ children, animationClass = "fade-in-up" }) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          // Add delay if specified
+          setTimeout(() => {
+            setIsVisible(true);
+          }, delay);
           observer.disconnect(); // Only trigger once
         }
       },
       {
-        threshold: 0.2,  
+        threshold: threshold,
+        rootMargin: "0px 0px -50px 0px", // Trigger slightly before element enters viewport
       }
     );
 
@@ -22,13 +31,15 @@ const ReviewOnScroll = ({ children, animationClass = "fade-in-up" }) => {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [threshold, delay]);
 
   return (
     <div
       ref={ref}
-      className={`opacity-0 transform transition duration-700 ease-out ${
-        isVisible ? `${animationClass} opacity-100` : ""
+      className={`transition-all duration-700 ease-out ${
+        isVisible 
+          ? `${animationClass} opacity-100 translate-y-0` 
+          : "opacity-0 translate-y-8"
       }`}
     >
       {children}
