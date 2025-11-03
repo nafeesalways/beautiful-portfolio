@@ -58,7 +58,7 @@ const projectData = [
   },
   {
     id: "3",
-    name: "Food Tracking System",
+    name: "FreshKeep",
     image:
       "https://camo.githubusercontent.com/b31d1b67cb7d30d474915e065e608d1754d0147094e24a52c08850d7e2a5f36a/68747470733a2f2f696d672e6672656570696b2e636f6d2f667265652d70686f746f2f776f6d616e2d627579696e672d6672756974732d6f6e6c696e652d7573696e672d6865722d736d61727470686f6e655f32332d323134393234303337342e6a70673f67613d4741312e312e313734343531313632332e313734393338353938302673656d743d6169735f6974656d735f626f6f7374656426773d373430",
     techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Firebase"],
@@ -80,7 +80,7 @@ const projectData = [
   },
   {
     id: "4",
-    name: "Sports Management System",
+    name: "Champion",
     image:
       "https://images.unsplash.com/photo-1551543801-fb7bdeb9fc4a?w=500&auto=format&fit=crop&q=60",
     techStack: ["React", "Express", "MongoDB", "Firebase Auth", "Stripe"],
